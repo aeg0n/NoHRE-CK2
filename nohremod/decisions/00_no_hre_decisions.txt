@@ -1,0 +1,130 @@
+decisions = {
+	no_hre = {
+		only_independent = yes
+		is_high_prio = yes
+		desc = no_hre_desc
+		potential = {
+			is_playable = yes
+			independent = yes
+			ai = no
+			OR = {
+				religion = catholic
+				religion = fraticelli
+				religion = cathar
+			}
+			OR = {
+				culture = german
+			}
+			e_germany = {
+				has_holder = no
+			}
+			has_landed_title = e_hre
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			prestige = 1000
+			realm_size = 180
+			culture = german
+			has_landed_title = e_hre
+		}
+		effect = {
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_culture
+			}
+			primary_title = {
+				e_germany = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+					hidden_tooltip = { make_primary_title = yes }
+					add_law_w_cooldown = crown_authority_2
+					add_law = centralization_2
+					add_law_w_cooldown = succ_primogeniture
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_DESTROYED_HRE
+				picture = GFX_evt_coronation
+			}
+			any_demesne_title = {
+				limit = {
+					tier = EMPEROR
+					NOT = {
+						title = e_germany
+					}
+				}
+				destroy_landed_title = THIS
+			}
+			hidden_tooltip = { k_hansa = { de_jure_liege = e_germany } }
+			hidden_tooltip = { k_saxony = { de_jure_liege = e_germany } }
+			hidden_tooltip = { k_frisia = { de_jure_liege = e_germany } }
+			hidden_tooltip = { k_lotharingia = { de_jure_liege = e_germany } }
+			hidden_tooltip = { k_bavaria = { de_jure_liege = e_germany } }
+			hidden_tooltip = { k_germany = { de_jure_liege = e_germany } }
+			hidden_tooltip = { k_bohemia = { de_jure_liege = e_germany } }
+			narrative_event = { id = NOHRE.0001 }
+		}
+		
+	}
+	
+	liberate_all_germans = {
+		only_independent = yes
+		is_high_prio = yes
+		desc = no_hre_desc
+		potential = {
+			is_playable = yes
+			independent = yes
+			ai = no
+			OR = {
+				religion = catholic
+				religion = fraticelli
+				religion = cathar
+			}
+			OR = {
+				culture = german
+			}
+			has_landed_title = e_hre
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			prestige = 1000
+			realm_size = 180
+			culture = german
+			has_landed_title = e_hre
+		}
+		effect = {
+			cash = 2000
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_liberator
+			}
+			chronicle = {
+				entry = CHRONICLE_DESTROYED_HRE_AND_LIBERATED
+				picture = GFX_evt_coronation
+			}
+			any_demesne_title = {
+				limit = {
+					OR = {
+						tier = EMPEROR
+						tier = KING
+					}
+				}
+				destroy_landed_title = THIS
+			}
+			hidden_tooltip = { k_hansa = { de_jure_liege = e_germany } }
+			hidden_tooltip = { k_saxony = { de_jure_liege = e_germany } }
+			hidden_tooltip = { k_frisia = { de_jure_liege = e_germany } }
+			hidden_tooltip = { k_lotharingia = { de_jure_liege = e_germany } }
+			hidden_tooltip = { k_bavaria = { de_jure_liege = e_germany } }
+			hidden_tooltip = { k_germany = { de_jure_liege = e_germany } }
+			hidden_tooltip = { k_bohemia = { de_jure_liege = e_germany } }
+			narrative_event = { id = NOHRE.0002 }
+		}
+		
+	}
+
+}

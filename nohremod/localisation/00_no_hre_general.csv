@@ -1,0 +1,9 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+no_hre;Renounce HRE and proclaim German Empire;;;;;;;;;;;;;x
+no_hre_desc;Our fathers destroyed Rome. Why should the victors bear the name of the vanquished?;;;;;;;;;;;;;x
+liberate_all_germans;Liberate all Germans;;;;;;;;;;;;;x
+liberate_all_germans_desc;Once upon a time, all Germans were free. Let us return to that age again, where only the strongest survived.;;;;;;;;;;;;;x
+CHRONICLE_DESTROYED_HRE;[From.GetTitledName] began a new era in history of the German people by laying foundation of the German Empire.;;;;;;;;;;;;;x
+CHRONICLE_DESTROYED_HRE_AND_LIBERATED;[From.GetTitledName] began a new era in history of the German people by abolishing the HRE and freeing every German man and woman.;;;;;;;;;;;;;x
+e_germany;German Empire;;;;;;;;;;;;;x
+e_germany_adj;German;;;;;;;;;;;;;x

@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_no_hre"
+		texturefile = "gfx\\no_hre_decisions\\no_hre_coa_decision.tga"
+	}
+	spriteType = {
+		name = "GFX_liberate_all_germans"
+		texturefile = "gfx\\no_hre_decisions\\no_hre_coa_decision.tga"
+	}
+}

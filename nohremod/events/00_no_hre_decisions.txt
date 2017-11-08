@@ -1,0 +1,32 @@
+namespace = NOHRE
+
+# End HRE
+character_event = {
+	id = NOHRE.0001
+	title = EVTNAMENOHRE.0001
+	desc = EVTDESCNOHRE.0001
+	major = yes
+	picture = GFX_evt_coronation
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA.0001
+	}
+}
+# Free all territories of HRE
+character_event = {
+	id = NOHRE.0002
+	title = EVTNAMENOHRE.0002
+	desc = EVTDESCNOHRE.0002
+	major = yes
+	picture = GFX_evt_coronation
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA.0002
+	}
+}

@@ -19,11 +19,11 @@ Navigate to your mod directory:
 
 - Mac: `~/Documents/Paradox Interactive/Crusader Kings II/mod/`
 
-And paste the "verbanonactamod" folder and "verbanonactamod.mod" file in your mod directory. 
+And paste the "nohremod" folder and "nohremod.mod" file in your mod directory. 
 
 ## Compatibility
 
-Theoretically it should run with every mod which doesn't replace the vanilla cultures e.g. like CK2 changes German culture to Swabian, Saxon, Austrian etc. That is because for the decision to run, there has to be a German culture.
+Theoretically it should run with every mod which doesn't replace the vanilla cultures e.g. like CK2+ changes German culture to Swabian, Saxon, Austrian etc. That is because for the decision to run, there has to be a German culture.
 
 
 ## Contact

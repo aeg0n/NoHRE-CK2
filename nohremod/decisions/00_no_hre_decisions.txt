@@ -97,7 +97,7 @@ decisions = {
 			has_landed_title = e_hre
 		}
 		effect = {
-			cash = 2000
+			money = 2000
 			if = {
 				limit = { has_nickname = no }
 				give_nickname = nick_the_liberator
